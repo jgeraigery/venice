@@ -1,4 +1,4 @@
-FROM openjdk:11.0.6-jre-buster
+FROM openjdk:11.0.16-jre-buster
 
 ARG SRC_ZK_CFG="zoo.cfg"
 

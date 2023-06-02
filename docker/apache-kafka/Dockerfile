@@ -1,4 +1,4 @@
-FROM openjdk:11.0.6-jre-buster
+FROM openjdk:11.0.16-jre-buster
 
 # build time
 ARG ZOOKEEPER_ADDRESS=zookeeper:2181

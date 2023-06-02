@@ -57,7 +57,7 @@ ext.libraries = [
     caffeine: 'com.github.ben-manes.caffeine:caffeine:2.8.5',
     classgraph: 'io.github.classgraph:classgraph:4.8.60',
     commonsCodec: 'commons-codec:commons-codec:1.4',
-    commonsConfiguration: 'commons-configuration:commons-configuration:1.9',
+    commonsConfiguration: 'commons-configuration:commons-configuration:1.10',
     commonsIo: 'commons-io:commons-io:2.11.0',
     commonsCli: 'commons-cli:commons-cli:1.5.0',
     commonsLang: 'commons-lang:commons-lang:2.6',

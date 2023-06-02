@@ -111,7 +111,7 @@ ext.libraries = [
     testng: 'org.testng:testng:6.14.3',
     // Resolves java.lang.UnsupportedOperationException:  setXIncludeAware is not supported on this JAXP implementation or earlier: class org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
     xalan: 'xalan:xalan:2.7.1',
-    xerces: 'xerces:xercesImpl:2.9.1',
+    xerces: 'xerces:xercesImpl:2.12.2',
     zkclient: 'com.101tec:zkclient:0.7', // For Kafka AdminUtils
     zookeeper: 'org.apache.zookeeper:zookeeper:3.5.9',
     zstd: 'com.github.luben:zstd-jni:1.5.2-3'

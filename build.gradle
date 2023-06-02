@@ -81,7 +81,7 @@ ext.libraries = [
     jdom: 'org.jdom:jdom:1.1',
     jna: 'net.java.dev.jna:jna:4.5.1',
     jsr305: 'com.google.code.findbugs:jsr305:3.0.2',
-    joptSimple: 'net.sf.jopt-simple:jopt-simple:3.2',
+    joptSimple: 'net.sf.jopt-simple:jopt-simple:3.3',
     kafka: kafkaGroup + ':kafka_2.12:' + kafkaVersion,
     kafkaClients: kafkaGroup + ':kafka-clients:' + kafkaVersion,
     kafkaClientsTest: kafkaGroup + ':kafka-clients:' + kafkaVersion + ':test',

@@ -63,7 +63,7 @@ ext.libraries = [
     commonsLang: 'commons-lang:commons-lang:2.6',
     conscrypt: 'org.conscrypt:conscrypt-openjdk-uber:2.5.2',
     d2: 'com.linkedin.pegasus:d2:' + pegasusVersion,
-    failsafe: 'net.jodah:failsafe:2.4.0',
+    failsafe: 'net.jodah:failsafe:2.4.4',
     fastUtil: 'it.unimi.dsi:fastutil:8.3.0',
     hadoopCommon: 'org.apache.hadoop:hadoop-common:2.3.0',
     helix: 'org.apache.helix:helix-core:1.0.4',

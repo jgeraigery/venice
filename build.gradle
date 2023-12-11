@@ -79,7 +79,7 @@ ext.libraries = [
     javax: 'javax.servlet:javax.servlet-api:3.1.0',
     javaxActivation: 'com.sun.activation:javax.activation:1.2.0',
     jdom: 'org.jdom:jdom:1.1',
-    jna: 'net.java.dev.jna:jna:4.5.1',
+    jna: 'net.java.dev.jna:jna:5.14.0',
     jsr305: 'com.google.code.findbugs:jsr305:3.0.2',
     joptSimple: 'net.sf.jopt-simple:jopt-simple:3.2',
     kafka: kafkaGroup + ':kafka_2.12:' + kafkaVersion,

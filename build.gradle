@@ -43,7 +43,7 @@ def kafkaGroup = 'com.linkedin.kafka'
 def kafkaVersion = '2.4.1.65'
 def log4j2Version = '2.17.1'
 def pegasusVersion = '29.31.0'
-def jacksonVersion = '2.13.3'
+def jacksonVersion = '2.16.1'
 
 ext.libraries = [
     avro: 'org.apache.avro:avro:' + avroVersion,

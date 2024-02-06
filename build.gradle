@@ -101,7 +101,7 @@ ext.libraries = [
     rocksdbjni: 'org.rocksdb:rocksdbjni:7.9.2',
     samzaApi: 'org.apache.samza:samza-api:1.5.1',
     slf4j: 'org.slf4j:slf4j:1.7.36',
-    slf4jApi: 'org.slf4j:slf4j-api:1.7.36',
+    slf4jApi: 'org.slf4j:slf4j-api:2.0.12',
     slf4jSimple: 'org.slf4j:slf4j-simple:1.7.36',
     snappy: 'org.iq80.snappy:snappy:0.4',
     spark: 'com.sparkjava:spark-core:2.9.4',

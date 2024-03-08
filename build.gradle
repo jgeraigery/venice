@@ -55,7 +55,7 @@ ext.libraries = [
     avroUtilSpotbugsPlugin: 'com.linkedin.avroutil1:spotbugs-plugin:0.2.69',
     bouncyCastle: 'org.bouncycastle:bcprov-jdk15on:1.55',
     caffeine: 'com.github.ben-manes.caffeine:caffeine:2.8.5',
-    classgraph: 'io.github.classgraph:classgraph:4.8.60',
+    classgraph: 'io.github.classgraph:classgraph:4.8.168',
     commonsCodec: 'commons-codec:commons-codec:1.4',
     commonsConfiguration: 'commons-configuration:commons-configuration:1.9',
     commonsIo: 'commons-io:commons-io:2.11.0',

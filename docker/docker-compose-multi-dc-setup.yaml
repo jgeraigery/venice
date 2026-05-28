@@ -280,7 +280,7 @@ services:
 
 
   venice-client:
-    image: venicedb/venice-client:0.4.17
+    image: venicedb/venice-client:0.4.858
     container_name: venice-client
     hostname: venice-client
     tty: true

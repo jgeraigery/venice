@@ -29,7 +29,7 @@ services:
         retries: 5
 
   venice-controller:
-    image: venicedb/venice-controller:0.4.17
+    image: venicedb/venice-controller:0.4.858
     container_name: venice-controller
     hostname: venice-controller
     depends_on:

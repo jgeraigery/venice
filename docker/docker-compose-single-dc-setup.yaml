@@ -57,7 +57,7 @@ services:
         retries: 5
 
   venice-router:
-    image: venicedb/venice-router:0.4.17
+    image: venicedb/venice-router:0.4.858
     container_name: venice-router
     hostname: venice-router
     depends_on:

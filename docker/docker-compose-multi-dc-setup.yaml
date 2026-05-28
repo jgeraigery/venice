@@ -34,7 +34,7 @@ services:
 
 
   venice-controller.dc-parent.venicedb.io:
-    image: venicedb/venice-controller:0.4.17
+    image: venicedb/venice-controller:0.4.858
     container_name: venice-controller.dc-parent.venicedb.io
     hostname: venice-controller.dc-parent.venicedb.io
     depends_on:
@@ -85,7 +85,7 @@ services:
 
 
   venice-controller.dc-0.venicedb.io:
-    image: venicedb/venice-controller:0.4.17
+    image: venicedb/venice-controller:0.4.858
     container_name: venice-controller.dc-0.venicedb.io
     hostname: venice-controller.dc-0.venicedb.io
     depends_on:
@@ -200,7 +200,7 @@ services:
 
 
   venice-controller.dc-1.venicedb.io:
-    image: venicedb/venice-controller:0.4.17
+    image: venicedb/venice-controller:0.4.858
     container_name: venice-controller.dc-1.venicedb.io
     hostname: venice-controller.dc-1.venicedb.io
     depends_on:

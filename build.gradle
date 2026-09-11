@@ -9,13 +9,13 @@ plugins {
   id 'idea'
   id 'java'
   id 'maven-publish'
-  id 'com.diffplug.spotless' version '6.12.0'
+  id 'com.diffplug.spotless' version '6.25.0'
   id 'com.dorongold.task-tree' version '2.1.0'
   id 'com.github.johnrengelman.shadow' version '6.1.0' apply false
   id 'com.github.spotbugs' version '4.8.0' apply false
-  id 'org.gradle.test-retry' version '1.5.0' apply false
+  id 'org.gradle.test-retry' version '1.6.6' apply false
   id 'com.form.diff-coverage' version '0.9.5' apply false
-  id 'me.champeau.jmh' version '0.6.7' apply false
+  id 'me.champeau.jmh' version '0.7.3' apply false
   id 'io.github.lhotari.gradle-nar-plugin' version '0.5.1' apply false
 }
 
@@ -41,9 +41,9 @@ def avroVersion = '1.9.2'
 def avroUtilVersion = '0.2.150'
 def kafkaGroup = 'com.linkedin.kafka'
 def kafkaVersion = '2.4.1.65'
-def log4j2Version = '2.17.1'
+def log4j2Version = '2.26.1'
 def pegasusVersion = '29.31.0'
-def jacksonVersion = '2.13.3'
+def jacksonVersion = '2.22'
 
 ext.libraries = [
     avro: 'org.apache.avro:avro:' + avroVersion,
@@ -53,26 +53,26 @@ ext.libraries = [
     avroUtilCompatHelper: 'com.linkedin.avroutil1:helper-all:' + avroUtilVersion,
     avroUtilFastserde: 'com.linkedin.avroutil1:avro-fastserde:' + avroUtilVersion,
     avroUtilSpotbugsPlugin: 'com.linkedin.avroutil1:spotbugs-plugin:0.2.69',
-    bouncyCastle: 'org.bouncycastle:bcprov-jdk15on:1.55',
-    caffeine: 'com.github.ben-manes.caffeine:caffeine:2.8.5',
+    bouncyCastle: 'org.bouncycastle:bcprov-jdk15on:1.70',
+    caffeine: 'com.github.ben-manes.caffeine:caffeine:2.9.3',
     classgraph: 'io.github.classgraph:classgraph:4.8.60',
-    commonsCodec: 'commons-codec:commons-codec:1.4',
+    commonsCodec: 'commons-codec:commons-codec:1.22.1',
     commonsConfiguration: 'commons-configuration:commons-configuration:1.9',
-    commonsIo: 'commons-io:commons-io:2.11.0',
-    commonsCli: 'commons-cli:commons-cli:1.5.0',
+    commonsIo: 'commons-io:commons-io:2.22.0',
+    commonsCli: 'commons-cli:commons-cli:1.11.0',
     commonsLang: 'commons-lang:commons-lang:2.6',
     conscrypt: 'org.conscrypt:conscrypt-openjdk-uber:2.5.2',
     d2: 'com.linkedin.pegasus:d2:' + pegasusVersion,
     failsafe: 'net.jodah:failsafe:2.4.0',
-    fastUtil: 'it.unimi.dsi:fastutil:8.3.0',
+    fastUtil: 'it.unimi.dsi:fastutil:8.5.19',
     hadoopCommon: 'org.apache.hadoop:hadoop-common:2.3.0',
     helix: 'org.apache.helix:helix-core:1.0.4',
     httpAsyncClient: 'org.apache.httpcomponents:httpasyncclient:4.1.2',
-    httpClient5: 'org.apache.httpcomponents.client5:httpclient5:5.2.1',
-    httpCore5: 'org.apache.httpcomponents.core5:httpcore5:5.2.1',
-    httpCore5H2: 'org.apache.httpcomponents.core5:httpcore5-h2:5.2.1',
-    httpClient: 'org.apache.httpcomponents:httpclient:4.5.2',
-    httpCore: 'org.apache.httpcomponents:httpcore:4.4.5',
+    httpClient5: 'org.apache.httpcomponents.client5:httpclient5:5.6.4',
+    httpCore5: 'org.apache.httpcomponents.core5:httpcore5:5.4.3',
+    httpCore5H2: 'org.apache.httpcomponents.core5:httpcore5-h2:5.4.3',
+    httpClient: 'org.apache.httpcomponents:httpclient:4.5.14',
+    httpCore: 'org.apache.httpcomponents:httpcore:4.4.16',
     jacksonCore: 'com.fasterxml.jackson.core:jackson-core:' + jacksonVersion,
     jacksonAnnotations: 'com.fasterxml.jackson.core:jackson-annotations:' + jacksonVersion,
     jacksonDatabind: 'com.fasterxml.jackson.core:jackson-databind:' + jacksonVersion,
@@ -81,16 +81,16 @@ ext.libraries = [
     jdom: 'org.jdom:jdom:1.1',
     jna: 'net.java.dev.jna:jna:4.5.1',
     jsr305: 'com.google.code.findbugs:jsr305:3.0.2',
-    joptSimple: 'net.sf.jopt-simple:jopt-simple:3.2',
+    joptSimple: 'net.sf.jopt-simple:jopt-simple:3.3',
     kafka: kafkaGroup + ':kafka_2.12:' + kafkaVersion,
     kafkaClients: kafkaGroup + ':kafka-clients:' + kafkaVersion,
     kafkaClientsTest: kafkaGroup + ':kafka-clients:' + kafkaVersion + ':test',
     log4j2api: 'org.apache.logging.log4j:log4j-api:' + log4j2Version,
     log4j2core: 'org.apache.logging.log4j:log4j-core:' + log4j2Version,
-    mail: 'javax.mail:mail:1.4.4',
+    mail: 'javax.mail:mail:1.4.7',
     mapreduceClientCore: 'org.apache.hadoop:hadoop-mapreduce-client-core:2.3.0',
     mapreduceClientJobClient: 'org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.3.0',
-    mockito: 'org.mockito:mockito-core:3.3.3',
+    mockito: 'org.mockito:mockito-core:3.12.4',
     netty: 'io.netty:netty-all:4.1.52.Final',
     oss: 'org.sonatype.oss:oss-parent:7',
     pulsarClient: "${pulsarGroup}:pulsar-client:${pulsarVersion}",
@@ -107,13 +107,13 @@ ext.libraries = [
     spark: 'com.sparkjava:spark-core:2.9.4',
     spotbugs: 'com.github.spotbugs:spotbugs:4.5.2',
     tehuti: 'io.tehuti:tehuti:0.10.0',
-    testcontainers: 'org.testcontainers:testcontainers:1.18.0',
+    testcontainers: 'org.testcontainers:testcontainers:1.21.4',
     testng: 'org.testng:testng:6.14.3',
     // Resolves java.lang.UnsupportedOperationException:  setXIncludeAware is not supported on this JAXP implementation or earlier: class org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
-    xalan: 'xalan:xalan:2.7.1',
-    xerces: 'xerces:xercesImpl:2.9.1',
+    xalan: 'xalan:xalan:2.7.3',
+    xerces: 'xerces:xercesImpl:2.12.2',
     zkclient: 'com.101tec:zkclient:0.7', // For Kafka AdminUtils
-    zookeeper: 'org.apache.zookeeper:zookeeper:3.5.9',
+    zookeeper: 'org.apache.zookeeper:zookeeper:3.9.5',
     zstd: 'com.github.luben:zstd-jni:1.5.2-3'
 ]
 
@@ -225,7 +225,7 @@ subprojects {
 
     avroCompiler libraries.avroCompiler
     avroCompiler libraries.avroUtilBuilder
-    avroCompiler 'org.slf4j:slf4j-simple:1.7.32'
+    avroCompiler 'org.slf4j:slf4j-simple:1.7.36'
   }
 
   idea {
